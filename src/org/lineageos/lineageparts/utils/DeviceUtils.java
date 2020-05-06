@@ -50,6 +50,12 @@ public class DeviceUtils {
                 org.lineageos.platform.internal.R.bool.config_haveNotch);
     }
 
+    /* returns whether the device has a smaller dot/u/v notch or not. */
+    public static boolean hasDotNotch(Context context) {
+        return context.getResources().getBoolean(
+                org.lineageos.platform.internal.R.bool.config_haveDotNotch);
+    }
+
     public static int getDeviceKeys(Context context) {
         return context.getResources().getInteger(
                 org.lineageos.platform.internal.R.integer.config_deviceHardwareKeys);
